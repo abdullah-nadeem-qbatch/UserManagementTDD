@@ -103,11 +103,11 @@ class User_test(unittest.TestCase):
 
         
         def when_update_user_function_is_called(self):
-            pass
+            self.result = self.user.update_user(self.username)
 
 
         def when_read_user_function_is_called(self):
-            pass
+            self.result = self.user.delete_user(self.username)
 
 
         def then_result_should_be(self, expected_result):
